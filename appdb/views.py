@@ -12,3 +12,7 @@ def contact_view(request):
         else:
             form = ContactForm()
         return render(request,'contact.html', {'form':form})
+
+def custom_page_not_found(request, exception):
+    return render(request, '404.html', status=404)
+

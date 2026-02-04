@@ -4,8 +4,8 @@ from django.http import HttpResponseForbiddn
 
 def secure_view(request):
     if not request.user.is_sueruser:
-        return render.user.is_superuser:
-            return render(request, '404.html', status=403)
+        return render.user.is_superuser
+    return render(request, '404.html', status=403)
 
-def custom_page_not_found(request,exception):
-    return render(request,'404.html',status=404)
+#def custom_page_not_found(request,exception):
+    #    return render(request,'404.html',status=404)
