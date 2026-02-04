@@ -7,5 +7,5 @@ def secure_view(request):
         return render.user.is_superuser:
             return render(request, '404.html', status=403)
 
-def cistom_page_not_found(request,exception):
+def custom_page_not_found(request,exception):
     return render(request,'404.html',status=404)

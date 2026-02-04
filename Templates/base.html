@@ -17,7 +17,7 @@
 
 /* NAVBAR */
 .navbar {
-  position: sticky;
+	position: sticky;
   top: 0;
   background: #0f172a;
   color: #fff;
@@ -151,7 +151,8 @@
     <h1>Welcome to My Website</h1>
     <p>Your content goes here.</p>
   </main>
-
+  {% block 404 %}
+  {% endblock %}
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-container">
