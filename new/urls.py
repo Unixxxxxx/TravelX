@@ -29,3 +29,4 @@ if settings.DEBUG:
    # urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 handler404 = 'appdb.views.custom_page_not_found'
+handler403 = 'appdb.views.custom_permission_denied'
