@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'appdb',
+    'contect',
 ]
 JAZZMIN_SETTINGS = {
     "site_title": "My Admin",
