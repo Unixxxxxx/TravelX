@@ -1,15 +1,17 @@
  {% extends "base.html"%}
   {% block index %}
-  <!-- PAGE CONTENT -->
-  <main style="min-height: 80vh; padding: 2rem;">
-    <h1>Welcome to My Website</h1>
-    <p>Your content goes here.</p>
-  </main>
+  
+<div class="slider">
+    <div class="slides">
+        <img src="https://via.placeholder.com/800x400/ff6b6b/ffffff?text=Slide+1" class="slide active">
+        <img src="https://via.placeholder.com/800x400/4ecdc4/ffffff?text=Slide+2" class="slide">
+        <img src="https://via.placeholder.com/800x400/1a535c/ffffff?text=Slide+3" class="slide">
+    </div>
 
-
-<div class="image-box">
-    <img src="https://via.placeholder.com/300x200" alt="Sample Image">
-    <h3>Image Title</h3>
-    <p>This is a simple image box using HTML and CSS.</p>
+    <button class="prev" onclick="changeSlide(-1)">❮</button>
+    <button class="next" onclick="changeSlide(1)">❯</button>
 </div>
+
+<script src="script.js"></script>
+
  {% endblock %}
