@@ -31,6 +31,7 @@ ALLOWED_HOSTS =['127.0.0.1', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +40,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'appdb',
 ]
+JAZZMIN_SETTINGS = {
+    "site_title": "My Admin",
+    "site_header": "My Project Admin",
+    "welcome_sign": "Welcome to Admin Dashboard",
+    "topmenu_links": [
+        {"name": "Home", "url": "/", "permissions": ["auth.view_user"]},
+    ],
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
