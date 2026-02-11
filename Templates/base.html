@@ -146,14 +146,12 @@
       <a href="#">Contact</a>
     </nav>
   </header>
-
-  <!-- PAGE CONTENT -->
-  <main style="min-height: 80vh; padding: 2rem;">
-    <h1>Welcome to My Website</h1>
-    <p>Your content goes here.</p>
-  </main>
+  <div class"block">
   {% block index %}
   {% endblock %}
+  {% block about %}
+  {% endblock %}
+  </div>
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-container">
