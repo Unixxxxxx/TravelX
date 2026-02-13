@@ -3,6 +3,7 @@ from .views import index, contact_view, secure_view, about, service,Service
 
 urlpatterns = [
         path('',index, name='index'),
+        path('',home,name='home'),
         path('Service/',Service, name='Service'),
         path('',contact_view, name='contact'),
         path('servic/',service, name='service'),

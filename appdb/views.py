@@ -8,6 +8,8 @@ def index(request):
 def about(request):
     return render(request, 'about.html')
 
+def hone(request):
+    return render(request, 'home.html')
 def Service(request):
     return render(request, 'Service.html')
 
